@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thank You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(
+        90deg,
+        #90cc39 0%,
+        #62931c 50%,
+        #638a29 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .thankyou-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3.5rem 3rem;
+      border-radius: 28px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+      animation: fadeUp 0.6s ease;
+    }
+
+    .check-circle {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      background: #e7f3d6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .check-circle svg {
+      width: 44px;
+      height: 44px;
+      stroke: #62931c;
+      stroke-width: 3;
+      fill: none;
+    }
+
+    h1 {
+      font-family: "League Spartan", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1f1f1f;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #4b4b4b;
+      margin-bottom: 2.2rem;
+    }
+
+    .home-btn {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      border-radius: 30px;
+      background: #90cc39;
+      color: #1f1f1f;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background: #7db52f;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .auto-redirect {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="thankyou-card">
+    <div class="check-circle">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 13l4 4L19 7"></path>
+      </svg>
+    </div>
+
+    <h1>Thank You!</h1>
+    <p>
+      Your message has been successfully sent.  
+      We truly appreciate you reaching out and will get back to you shortly.
+    </p>
+
+    <a href="https://charancheedella.github.io/OldAgeHome/" class="home-btn">
+      Back to Home
+    </a>
+
+    <div class="auto-redirect">
+      You will be redirected automatically in a few seconds…
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://charancheedella.github.io/OldAgeHome/";
+    }, 6000);
+  </script>
+
+</body>
+</html>
