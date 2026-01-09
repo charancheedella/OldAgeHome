@@ -496,13 +496,18 @@ s<!DOCTYPE html>
     </div>
 
     <!-- Right Side Form -->
-    <form class="contact-form" action="https://submit-form.com/6seliBMil">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <input type="text" name="Subject" placeholder="Subject" required />
-      <textarea name="Message" rows="3" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <form class="contact-form" action="https://submit-form.com/6seliBMil" method="POST">
+
+    <input type="hidden" name="_redirect"
+      value="https://charancheedella.github.io/OldAgeHome/thankyou.html">
+
+    <input type="text" name="Name" placeholder="Your Name" required />
+    <input type="email" name="Email" placeholder="Your Email" required />
+    <input type="text" name="Subject" placeholder="Subject" required />
+    <textarea name="Message" rows="3" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+
+  </form>
   </div>
 
   <p class="footer-note">© Copyright Venkata Sai Charan Cheedella. All Rights Reserved</p>
@@ -514,3 +519,4 @@ s<!DOCTYPE html>
 </body>
 
 </html>
+
