@@ -21,6 +21,10 @@ html {
   z-index: 100000;  
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   border-radius: 0 0 2rem 2rem;
+  transition: transform 0.6s ease; 
+}
+.nav-bar.hide {
+  transform: translateY(-100%); 
 }
 
 .logo{
@@ -760,4 +764,5 @@ html {
   font-size: 0.7rem;
   color: #fff;
 }
+
 
