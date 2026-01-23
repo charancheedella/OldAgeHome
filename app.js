@@ -65,4 +65,23 @@ document.querySelectorAll(".faq-question").forEach(button => {
       faqAnswer.style.maxHeight = 0;
     }
   });
+
+});
+
+// nav bar stickyness
+let lastScroll = 0;
+const navbar = document.querySelector('.nav-bar');
+
+window.addEventListener('scroll', () => {
+  let currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // scrolling down → hide
+    navbar.classList.add('hide');
+  } else {
+    // scrolling up → show
+    navbar.classList.remove('hide');
+  }
+
+  lastScroll = currentScroll;
 });
